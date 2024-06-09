@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.function.DoubleToIntFunction;
 
 public class Principal {
     public static void main(String[] args) {
@@ -8,7 +9,7 @@ public class Principal {
 
         int opcion = 0;
         while (opcion!=12){
-            System.out.println("**************************************");
+            System.out.println("**************************************************************");
             System.out.println("Bienvenido al conversor de moneda.");
             System.out.println("Elige una opción de conversión");
             System.out.println
@@ -27,6 +28,7 @@ public class Principal {
 
             opcion = lectura.nextInt();
             lectura.nextLine();
+
 
             switch(opcion) {
                 case 1:
@@ -71,10 +73,11 @@ public class Principal {
 
             }
 
+
+            System.out.println("Gracias por utilizar el conversor de monedas.");
+
+
         }
-
-
-
 
     }
 }
